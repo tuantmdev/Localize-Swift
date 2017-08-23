@@ -128,6 +128,7 @@ open class Localize: NSObject {
         }
         
         UserDefaults.standard.set([selectedLanguage], forKey: AppleLanguagesKey)
+        UserDefaults.standard.synchronize()
     }
     
     /**
